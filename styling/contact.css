@@ -1,0 +1,239 @@
+:root {
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+    --button-color: #2bb686;
+}
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: var(--bg-primary);
+    height: 9.063rem;
+}
+.nav-img {
+    height: 3.75rem;
+}
+.navigation {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: 1rem;
+}
+nav .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    position: fixed;  
+    width: 100%;
+    top: 0;
+    background-color: var(--bg-primary); 
+    font-family: 'Poppins',sans-serif;
+    z-index: 2;
+}   
+.btn-nav {
+    display: flex;
+    align-items: inline;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem;
+    font-size: 0.75rem;
+}
+nav li {
+    position: relative;
+}
+nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: var(--text-primary);
+    padding: 0.313rem;
+    z-index: 3;
+}
+.btn-nav:hover {
+    background-color: var(--bg-primary);
+}
+.navigation a:hover {
+    color: var(--text-secondary);
+}
+.drop-down:hover .subnav {
+    display: block;
+}
+.subnav a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block; 
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+.btn-nav .material-symbols-outlined {
+    color: white;
+    margin-top: 0.063rem; 
+    position: absolute;
+    font-size: 1rem !important;
+}
+.start {
+    background-color: var(--bg-primary);
+    font-family: 'Poppins', sans-serif;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Poppins',sans-serif;
+    color: var(--text-light);
+    font-size: 3.5rem;
+    text-align: center;
+}
+svg {
+    width: 24px;
+    color: var(--bg-dark);
+    vertical-align: middle;
+}
+span {
+    font-size: 1.5rem;
+    color: var(--bg-dark);
+}
+.container-contact {
+    display: grid;
+    justify-items: center;
+    
+} 
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+} 
+.info ul {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+}
+.info li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}  
+.info a {
+    color: #8e8e8e;
+    font-size: 0.875rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+.info span {
+    vertical-align: middle;
+}
+.orar, .location {
+    color: #8e8e8e;
+    font-size: 0.875rem;
+} 
+.contact-form {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1.25rem;
+}
+.form-contact {
+    display: block;
+    box-sizing: border-box;
+}
+.contact label {
+    margin-bottom: 0.25rem;
+}
+.contact input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    height: 100px;
+    font-family: inherit;
+}
+.contact input[type="submit"] {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    color: var(--text-white);
+    text-align: center;
+    padding: 0.5rem;
+    width: 100px;
+}
+h2 {
+    color: var(--bg-dark);
+    margin-bottom: 1.75rem;
+    padding-top: 1.75rem;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+footer {
+    background-color: var(--bg-primary);
+    height: 80px;
+}
+footer p {
+    color: #fafafa;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Poppins' sans-serif;
+    padding: 1.875rem;
+}
+.container-contact {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: 1rem;
+}
+.second-p {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: 1rem;
+}
+.info {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: 1rem;
+}
+.contact .info {
+    display: flex;
+}
+.contact p {
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.875rem;
+}
+.info p  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+}
+.contact-form {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+}
